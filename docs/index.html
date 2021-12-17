@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header{
+            display: flex;
+            background-color:rgb(28, 28, 66);
+            padding: 3px;
+        }
+        #a1{
+            color: white;
+            position: relative;
+            left: 100px;
+            cursor: pointer;
+        }
+        #a2{
+            color: white;
+            position: relative;
+            left: 200px;
+            cursor: pointer;
+
+        }
+        #btn {
+            color: black;
+            background-color: #fdc800;
+            padding: 3px;
+            border: 1px solid;
+            cursor: pointer;
+            text-decoration: none;
+            position: relative;
+            left: 750px;
+
+        }
+        nav{
+            display: flex;
+            padding: 5px;
+            background-color: white;
+        }
+        #img{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            position: relative;
+            left: 100px;
+        }  
+        .a3:nth-child(2){
+            color:rgb(28, 28, 66);
+            position: relative;
+            left: 115px;
+            font-size: 30px;
+            top: 5px;
+            font-weight: bold;
+           
+        }    
+        .a3:nth-child(3){
+            color: black;
+            position: relative;
+            left: 300px;
+            top: 15px;
+            cursor: pointer;
+
+        }
+        .a3:nth-child(4){
+            color: black;
+            position: relative;
+            left: 330px;
+            top: 15px;
+            cursor: pointer;
+
+        }
+        /* .drop{
+            position: relative;
+            color: black;
+            cursor: pointer;
+            left: 360px;
+            top: 15px;
+            
+        } */
+        .child-menu{
+            display: none;
+            position: absolute;
+            background-color: blueviolet;
+        
+        }
+        .child-menu li{
+            text-align: left;
+            
+        } 
+        .drop-menu{
+            position: relative;
+            color: black;
+            cursor: pointer;
+            left: 360px;
+            top: 15px;
+            
+        }
+        .drop-menu:hover .child-menu {
+            display: list-item !important;
+            
+        }
+        .a3:nth-child(8){
+            color: black;
+            position: relative;
+            left: 600px;
+            top: 10px;
+            cursor: pointer;
+
+        }
+        .a3:nth-child(7){
+            color: black;
+            position: relative;
+            left: 390px;
+            top: 15px;
+            cursor: pointer;
+
+        }
+        #front{
+            width: 100%;
+            height: 500px;
+        }
+        #a4{
+            width: 200px;
+            height: 200px;
+            color: #fdc800;
+            font-size: 19px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            position: relative;
+            left: 300px;
+            bottom: 70px;
+            box-shadow: 3px 3px 15px rgb(138, 134, 134);
+            transition: .3s ;
+        }
+        #a4:hover{
+            transform: translate(0,-30px);
+        }
+        #a4 h3{
+            color: black;
+            font-size: 17px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #a4 p{
+            font-style:normal;
+            font-size: 15px;
+            color: black;
+        }
+        #learn{
+            text-decoration: none;
+            text-align: center;
+            background-color: #fdc800;
+            padding: 3px;
+            color: black;
+            
+        }
+        #a5{
+            width: 200px;
+            height: 200px;
+            color: #fdc800;
+            font-size: 19px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            position: relative;
+            left: 400px;
+            bottom: 52px;
+            box-shadow: 3px 3px 15px rgb(138, 134, 134);
+            transition: .3s ;
+        }
+        #a5:hover{
+            transform: translate(0,30px);
+        }
+        #a5 h3{
+            color: black;
+            font-size: 17px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #a5 p{
+            font-style:normal;
+            font-size: 15px;
+            color: black;
+        }
+        #learn{
+            text-decoration: none;
+            text-align: center;
+            background-color: #fdc800;
+            padding: 3px;
+            color: black;
+            
+        }
+        #a6{
+            width: 200px;
+            height: 200px;
+            color: #fdc800;
+            font-size: 19px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            position: relative;
+            left: 500px;
+            bottom: 70px;
+            box-shadow: 3px 3px 15px rgb(138, 134, 134);
+            transition: .3s ;
+        }
+        #a6:hover{
+            transform: translate(0,-30px);
+        }
+        #a6 h3{
+            color: black;
+            font-size: 17px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #a6 p{
+            font-style:normal;
+            font-size: 15px;
+            color: black;
+        }
+        #learn{
+            text-decoration: none;
+            text-align: center;
+            background-color: #fdc800;
+            padding: 3px;
+            color: black;
+            
+        }
+        .a7{
+             position: absolute;
+             text-align: center;
+            
+
+        }
+        .a7 h4{
+            font-size: 50px;
+            line-height: 68px;
+              font-weight: 600;
+            position: relative;
+            top: -455px;
+            left: 400px;
+            color: whitesmoke;
+            font-family: 'Work Sans', sans-serif;
+        }
+        #more{
+            position: relative;
+            top: -450px;
+            left: 380px;
+            text-decoration:none;
+            color: black;
+            background-color: #fdc800;
+            padding: 10px;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div id="a1" class="fa fa-phone">03042822127</div>
+        <div id="a2" class="fa fa-envelope">chadnan421950@gmail.com</div>
+        <div>
+            <a id="btn" href="">Apply Now</a>
+        </div>
+
+    </header>
+    <nav>
+        <img id="img" src="download.jpg" alt="">
+        <div class="a3">Mastery</div>
+        <div class="a3">Home</div>
+        <div class="a3">About</div>
+        <div id="drop" class="drop-menu" >Pages
+
+            <ol class="child-menu">
+            
+                <li>Faculty</li>
+                <li>Admission</li>
+                <li>Result</li>
+                <li>Portal</li>
+            </ol>
+        </div>
+        <div class="a3">Contact</div>
+        <div class="a3"><input type="search" placeholder="search here"></div>
+
+    </nav>
+    <section>
+        <img id="front" src="front.jpg" alt="">
+        <div class="a7">
+            <h4>Better Education For <br> A Better World</h4>
+            <a id="more" href="#">Read more</a>
+        </div>
+        <div id="a4" class="fa fa-laptop">
+            <h3>Learn Courses Online</h3>
+            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+            <a id="learn" href="#">Read more</a>
+        </div>
+        <div id="a5" class="fa fa-users">
+            <h3>Highly Qualified Teachers</h3>
+            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+            <a id="learn" href="#">Read more</a>
+        </div>
+        <div id="a6" class="fa fa-book">
+            <h3>Book Library & Stores</h3>
+            <p>Auci elit cons equat ipsutis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet</p>
+            <a id="learn" href="#">Read more</a>
+        </div>
+    </section>
+
+</body>
+</html>
